@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "1ad25875-a2ff-4fea-802f-e1bc07d97891",
+		"name": "EasyJobRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6778148"
+	},
+	"item": [
+		{
+			"name": "RegisterEmployer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameEmployer\":\"Test2\",\r\n    \"age_employer\":10,\r\n    \"city_employer\":\"Oxapampa\",\r\n    \"phone_employer\":876765656,\r\n    \"email_employer\":\"test2@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/registerEmployer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"registerEmployer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerWorker",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name_worker\":\"Trabajador2\",\r\n    \"age_worker\":17,\r\n    \"address_worker\":\"av. universitaria 81\",\r\n    \"email_worker\": \"worker2@gmail.com\",\r\n    \"phone_worker\": 765454243,\r\n    \"city_worker\": \"Lima\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/registerWorker",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"registerWorker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllWorkers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/getAllWorkers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getAllWorkers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getWorkerbyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/getWorker/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"getWorker",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteWorker",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/worker/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"worker",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
